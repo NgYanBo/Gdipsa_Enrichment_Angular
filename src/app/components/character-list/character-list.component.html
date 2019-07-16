@@ -1,0 +1,12 @@
+<mat-nav-list>
+  <a mat-list-item *ngFor="let c of characters" [routerLink]="[c.id]">
+    {{ c.name }}
+  </a>
+</mat-nav-list>
+
+<mat-card-actions fxLayoutAlign="end">
+  <button type="button" mat-button mat-raised-button color="primary"
+      (click)="back()">
+    <mat-icon>arrow_back</mat-icon>
+    Back
+  </button>
